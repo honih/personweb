@@ -2,7 +2,7 @@
 "name": "honih",
 "lang": "zh-CN",
 "description": "My Personal Website",
-"start_url": "/",
+"start_url": "https://honih.github.io/personweb/index.html",
 "id": "/",
 "background_color": "#ffffff",
 "theme_color": "#76d8ff",
