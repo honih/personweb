@@ -1,0 +1,257 @@
+/* CSS */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "MyFont";
+	src: url("auto.woff2") format("woff2");
+	font-display: optional;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+nav li a:hover {
+  text-decoration: none;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.footer-links {
+  display: inline;
+  -webkit-text-fill-color: #fff;
+  padding: 3px 3px;
+}
+
+/* 去掉所有链接的下划线 */
+a {
+  text-decoration: none;
+}
+
+/* 悬停时给所有链接添加下划线 */
+a:hover {
+  text-decoration: underline;
+}
+
+.telephone:hover {
+  -webkit-text-fill-color: #ff6e6e;
+}
+
+.email:hover {
+  -webkit-text-fill-color: #ff6e6e;
+}
+
+.mod_copyright_split {
+  border-left: 1px;
+  padding-left: 10px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.project img {
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  max-height: 300px;
+  width: auto;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 手机端 */
+@media screen and (max-width: 768px) {
+  /* 将导航栏变成响应式布局 */
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 去除行间距 */
+  ul li {
+    margin-bottom: 0;
+  }
+
+  /* 图片自适应大小 */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 隐藏小屏幕下不必要的项目 */
+  #portfolio h2,
+  #contact h2 {
+    display: none;
+  }
+
+  /* 改变表单元素宽度 */
+  form input,
+  form textarea {
+    width: 94%;
+  }
+
+  /* 调整提交按钮宽度 */
+  form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* 针对平板端的样式 */
+
+  /* header部分 */
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  /* main部分 */
+  main {
+    padding: 10px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  .project h3 {
+    font-size: 20px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  .project img {
+    max-height: 200px;
+  }
+
+  form input[type="submit"] {
+    padding: 5px 10px;
+  }
+
+  /* footer部分 */
+  footer {
+    padding: 10px;
+  }
+}

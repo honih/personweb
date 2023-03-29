@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Personal Website</title>
+	<!--引入预加载字体-->
+	<link rel="preload" href="auto.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="./images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<header>
+		<h1>Welcome to My Website</h1>
+		<div style="text-align:justify;padding: 5px;">
+			<img src="https://s1.ax1x.com/2023/03/04/ppE8DVU.png" alt="honih" width="100px" height="100px">
+			<nav>
+				<ul>
+					<li><a href="https://honih.github.io/blog_imgs/">About Me</a></li>
+					<li><a href="/demo1/project.html">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Welcome to my blog! This is a place where I record my growth, 
+				share my experiences and thoughts. I love writing because
+				 it allows me to express my ideas and feelings better
+				 , and it also helps me to think more deeply about is
+				 sues. My blog mainly covers my professional field, 
+				 life experience and personal growth, including stud
+				 y notes, technical sharing, book reviews, travel dia
+				 ries, etc. I hope that through my blog, I can share m
+				 y experiences with more friends, and I also hope to r
+				 eceive feedback and suggestions from you. Let's grow 
+				 and progress together. Thank you for visiting!</p>
+			<p>I specialize in creating responsive websites using HTML, CSS, and JavaScript. Check out my projects below to see some examples of my work.</p>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li>
+					<a href="#">Python</a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ante id odio bibendum, vel feugiat nibh tincidunt.</p>
+				</li>
+				<li>
+					<a href="#">Java</a>
+					<p>Sed elementum tristique eros a commodo. Nullam vulputate, mauris non fringilla dignissim, dolor urna malesuada tortor, vel facilisis est purus et magna.</p>
+				</li>
+				<li>
+					<a href="#">html</a>
+					<p>Proin ipsum dui, dapibus et risus eu, molestie mollis leo. Sed sodales euismod consectetur. Sed eu porttitor est.</p>
+				</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
+
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	<header>
+		<footer>
+			<div class="footer-links">
+				<a href="tel:+8615378972274" class="telephone">联系电话</a>
+				<span class="mod_copyright_split">|</span>
+				<a href="mailto:1508749910@qq.com" class="email">1508749910@qq.com</a>
+				<span class="mod_copyright_split">|</span>
+				<span class="Copyright">Copyright &copy; 2023 honih</span>
+			</div>
+		</footer>
+	</header>
+	
+</body>
+<script>
+	if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+</script>
+</html>
